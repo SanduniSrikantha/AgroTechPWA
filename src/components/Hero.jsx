@@ -13,7 +13,7 @@ const Hero = () => {
           <h1 className='md:text-4xl sm:text-3xl text-xl font-bold py-0'>GET YOUR</h1>
           <Typed 
                     className='md:text-4xl sm:text-3xl text-xl font-bold md:pl-3 pl-2'
-                    strings={['SEEDS', 'FERTILIZER', 'PESTICIDES']}
+                    strings={['SEEDS', 'FERTILIZER', 'PESTICIDE']}
                     typeSpeed={120}
                     backSpeed={140}
                     loop

@@ -8,7 +8,7 @@ const Filters = () => {
   return (
     <div class="bg-white py-8">
         <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-[#e0c470] mb-10">Our Products</h2>
+        <h2 class="text-3xl font-bold text-[#ffab70] mb-10">Our Products</h2>
         <div class="grid grid-cols-1 xl:grid-cols-4 gap-5 md:grid-cols-2 place-items-center">
             <div class="">    
                 <Filter1 />   

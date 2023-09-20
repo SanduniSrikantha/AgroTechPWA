@@ -13,8 +13,7 @@ const Card2 = () => {
           <img class="rounded-t-lg p-8" src={HeroImage} alt="product image" />
       </a><div class="px-5 pb-5">
               <a href="#">
-                  <h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Apple Watch Series 7
-                      GPS, Aluminium Case, Starlight Sport</h3>
+                  <h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h3>
               </a>
               <div class="flex items-center mt-2.5 mb-5">
                   <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
