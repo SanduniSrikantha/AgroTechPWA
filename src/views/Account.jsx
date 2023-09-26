@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { UserAuth } from '../context/AuthContext'
 import Navbar from '../components/NavBar'
+import HeroAccount from '../components/HeroAccount'
 
 const Account = () => {
 
@@ -24,8 +25,10 @@ const navigate = useNavigate()
 
   return (
     
-    <div class='max-w-[600px] mx-auto my-16 p-4'>
+    <div>
+      
       <Navbar /> 
+      <HeroAccount />
       <h1 class='text-2xl font-bold py-4'>Account</h1>
       <p>User Email: {user && user.email}</p>
       
