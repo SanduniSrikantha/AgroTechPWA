@@ -1,9 +1,10 @@
 import React from 'react'
+import ProductCard from '../components/ProductCard'
 
 const ProductView = () => {
   return (
     <div>
-      <h1>Product View</h1>
+      <ProductCard/>
     </div>
   )
 }

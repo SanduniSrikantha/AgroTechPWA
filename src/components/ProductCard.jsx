@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCard1 from './ProductCart1'
+import ProductCard1 from './ProductCard1'
 
 const ProductCard = () => {
   return (
