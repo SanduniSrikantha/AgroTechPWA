@@ -1,9 +1,18 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
+import ProductCard from '../components/ProductCard'
+import ProductInformation from '../components/ProductInformation'
 
 const ProductView = () => {
   return (
     <div>
-      <h1>Product View</h1>
+      <NavBar/>
+      
+      <ProductCard/>
+
+      <ProductInformation/>
+      <Footer/>
     </div>
   )
 }
