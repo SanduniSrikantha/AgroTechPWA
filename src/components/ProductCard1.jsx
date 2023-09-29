@@ -16,9 +16,9 @@ const ProductCard1 = () => {
 
       
     <div class='max-w-[1200px] mx-auto grid md:grid-cols-2'>
-      <img class='md:w-[350px] lg:w-[350px] sm:w-[100px] sm:h-[auto] mx-auto my-4 overflow-hidden' src={PS} alt='/' />
-    <div class="flex flex-col space-y-6">
-      <div class="">Potassium Sulphate (0-0-50)</div>
+      <img class='md:w-[350px] lg:w-[350px] sm:w-[100px] sm:h-[auto] mx-auto my-4 overflow-hidden place-self-center' src={PS} alt='/' />
+    <div class="flex flex-col space-y-6 mx-3">
+      <div class="mt-4 font-semibold text-xl">Potassium Sulphate (0-0-50)</div>
       <div class="">Sulfate of Potash Granular is a 0-0-50 white granule that provides 50% potash and 17% sulfur to crops.
 
 This potassium sulfate fertilizer is chloride-free and has a low salt index, less than half that of muriate of potash.
@@ -58,7 +58,7 @@ Potassium Sulfate is suitable for applications into fertility systems primarily 
         location.loaded ? JSON.stringify(location) : "Location data not available yet."
       }
       </div>
-      <div>Delivered on July 2nd 2023</div>
+      <div class="pb-4">Delivered on July 2nd 2023</div>
       
     </div>
 
