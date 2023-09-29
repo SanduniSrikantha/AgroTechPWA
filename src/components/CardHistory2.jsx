@@ -4,7 +4,7 @@ import CheckCircleTwoToneIcon from '@mui/icons-material/CheckCircleTwoTone';
 
 
 
-const CardHistory1 = () => {
+const CardHistory2 = () => {
   return (
     <div class="max-w-[1200px] mx-auto ">
     <div class='max-w-[1200px] mx-5 my-5 flex justify-start space-x-4'>
@@ -49,4 +49,4 @@ const CardHistory1 = () => {
   )
 }
 
-export default CardHistory1
+export default CardHistory2
