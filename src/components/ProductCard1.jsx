@@ -1,11 +1,11 @@
 import React from 'react'
-
 import LocalOfferTwoToneIcon from '@mui/icons-material/LocalOfferTwoTone';
 import PS from '../assets/PotassiumSulphate.png';
 import CounterInput from './CounterInput';
 import RadioButtons from './RadioButtons';
 import Payment from './Payment'
 import useGeoLocation from '../hooks/useGeolocation';
+import OrderDate from './OrderDate';
 
 
 
@@ -59,8 +59,10 @@ Potassium Sulfate is suitable for applications into fertility systems primarily 
       }
       </div>
       <div class="pb-4">Delivered on July 2nd 2023</div>
+      <div><OrderDate/></div>
       
     </div>
+
 
 
 
