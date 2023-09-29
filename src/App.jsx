@@ -26,16 +26,16 @@ function App() {
         <Route path='/' element={<Signin />} />
         <Route path='/signup' element={<Signup />} />
         <Route 
-        path='/account' 
+        path='/home' 
         element={
         <ProtectedRoute>
-          <Account />
+          <Home />
           </ProtectedRoute>} 
           />
         <Route path='/cart' element={(<Cart />)} />
         <Route path='/checkout' element={(<CheckOut />)} />
         <Route path='/productview' element={(<ProductView />)} />
-        <Route path='/home' element={(<Home />)} />
+        <Route path='/account' element={(<Account />)} />
         <Route path='/history' element={(<History/>)} />
         <Route path='/upcoming' element={(<Upcoming />)} />
         
