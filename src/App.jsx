@@ -11,7 +11,8 @@ import { Route, Routes } from 'react-router-dom'
 import { AuthContextProvider } from './context/AuthContext'
 import ProtectedRoute from './views/ProtectedRoutes'
 import History from './views/History'
-import "@stripe/stripe-js"
+import "@stripe/stripe-js";
+
 
 
 

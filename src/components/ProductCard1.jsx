@@ -3,12 +3,11 @@ import LocalOfferTwoToneIcon from '@mui/icons-material/LocalOfferTwoTone';
 import PS from '../assets/PotassiumSulphate.png';
 import CounterInput from './CounterInput';
 import RadioButtons from './RadioButtons';
-import Payment from './Payment'
 import useGeoLocation from '../hooks/useGeolocation';
 import OrderDate from './OrderDate';
 import {loadStripe} from '@stripe/stripe-js';
 
-let stripePromise
+let stripePromise;
 
 const getStripe = () => {
   if (!stripePromise) {
@@ -35,15 +34,17 @@ const ProductCard1 = () => {
       mode: "payment",
       successUrl: '${window.location.origin}/success',
       cancelUrl: '${window.location.origin}/cancel'
-    }
+    };
 
     const redirectToCheckout = async () => {
-      console.log("redirectToCheckout")
+      console.log("redirectToCheckout");
+      console.log(url)
+      
 
-      const stripe = await getStripe()
-      const {error} = await stripe.redirectToCheckout(checkoutOptions)
-      console.log("Stripe checkout error", error)
-    }
+      const stripe = await getStripe();
+      const {error} = await stripe.redirectToCheckout(checkoutOptions);
+      console.log("Stripe checkout error", error);
+    };
 
 
 
