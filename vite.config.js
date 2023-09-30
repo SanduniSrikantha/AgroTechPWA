@@ -47,6 +47,9 @@ const manifestForPlugIn = {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), VitePWA(manifestForPlugIn)],
+  optimizeDeps: {
+    include: ['@stripe/stripe.js'],
+  },
 
 })
 

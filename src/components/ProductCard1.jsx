@@ -6,11 +6,52 @@ import RadioButtons from './RadioButtons';
 import Payment from './Payment'
 import useGeoLocation from '../hooks/useGeolocation';
 import OrderDate from './OrderDate';
+import {loadStripe} from '@stripe/stripe-js';
+
+let stripePromise
+
+const getStripe = () => {
+  if (!stripePromise) {
+
+    stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
+
+  }
+
+  return stripePromise;
+};
 
 
 
 const ProductCard1 = () => {
     const location = useGeoLocation();
+
+    const item = {
+      price:"price_1Nvz7yKv962XkHXAx622NQKk",
+      quantity: 1,
+    };
+
+    const checkoutOptions = {
+      lineItems: [item],
+      mode: "payment",
+      successUrl: '${window.location.origin}/success',
+      cancelUrl: '${window.location.origin}/cancel'
+    }
+
+    const redirectToCheckout = async () => {
+      console.log("redirectToCheckout")
+
+      const stripe = await getStripe()
+      const {error} = await stripe.redirectToCheckout(checkoutOptions)
+      console.log("Stripe checkout error", error)
+    }
+
+
+
+  
+
+
+
+
   return (
     <div class="max-w-[1200px] mx-auto ">
 
@@ -45,8 +86,9 @@ Potassium Sulfate is suitable for applications into fertility systems primarily 
       <a href="#"
           class="md:h-[45px] lg:h-[45px] my-1 text-white bg-[#00df9a] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to Cart
       </a>
+      <button class="md:h-[45px] lg:h-[45px] my-1 text-white bg-[#00df9a] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={redirectToCheckout}>CheckOut</button>
 
-      <Payment/>
+
 
 
 
