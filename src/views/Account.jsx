@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { UserAuth } from '../context/AuthContext'
 import Navbar from '../components/NavBar'
 import { Avatar } from '@mui/material'
-
 import Accountimg from '../assets/Account.png';
 import {useState} from 'react';
 import { storage } from '../firebase';

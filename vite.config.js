@@ -7,9 +7,9 @@ const manifestForPlugIn = {
   registerType:'prompt',
   includeAssests:['favicon.ico', "apple-touc-icon.png", "masked-icon.svg"],
   manifest:{
-    name:"React-vite-app",
-    short_name:"react-vite-app",
-    description:"I am a simple vite app",
+    name:"GrowersCart",
+    short_name:"CrowersCart",
+    description:"An app made for growers out there, to easily access any resources required.",
     icons:[{
       src: '/logo-192,192.png',
       sizes:'192x192',
