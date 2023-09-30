@@ -1,11 +1,65 @@
 import React from 'react'
+import GooglePayButton from '@google-pay/button-react'
+
 
 const Payment = () => {
   return (
+
+    <GooglePayButton
+
+    environment='TEST'
+    paymentRequest={{
+      apiVersion:2,
+      apiVersionMinor:0,
+      allowedPaymentMethods: [
+        {
+          type:'CARD',
+          parameters: {
+            allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+            allowedCardNetworks: ['MASTERCARD', 'VISA'],
+          },
+          tokenizationSpecification: {
+            type: 'PAYMENT_GATEWAY',
+            parameters: {
+              gateway: 'example',
+              gatewayMerchantId: 'exampleGatewayMerchantId',
+            },
+          },
+        },
+      ],
+      merchantInfo: {
+        merchantId: '12345678901234567890',
+        merchantName: 'Demo Merchant',
+      },
+      transactionInfo: {
+        totalPriceStatus: 'FINAL',
+        totalPriceLabel: 'Total',
+        totalPrice: '1',
+        currencyCode: 'USD',
+        countryCode: 'US',
+      },
+      shippingAddressRequired:true,
+      callbackIntents: ['SHIPPING_ADDRESS','PAYMENT_AUTHORIZATION'],
+    }}
+    onLoadPaymentData={paymentRequest => {
+      console.log('Success', paymentRequest);
+    }}
+    onPaymentAuthorized={paymentData => {
+      console.log('Payment Authorised Success', paymentData)
+      return{transactionState: 'SUCCESS'}
+    }}
+    onPaymentDataChanged={paymentData => {
+      console.log('On Payment Data Changed', paymentData)
+      return{}
+    }}
+    existingPaymentMethodRequired='false'
+    buttonColor='black'
+    buttonType='Buy'
+
     
-      <a href="#"
-          class="md:h-[45px] lg:h-[45px] my-1 text-white bg-[#00df9a] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy
-      </a>
+    />
+    
+
       
     
   )
