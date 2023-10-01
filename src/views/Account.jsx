@@ -63,7 +63,7 @@ const Account = () => {
       <Navbar />
       <div className="w-full bg-white py-12 px-4">
         <div className="max-w-[1200px] mx-auto grid md:grid-cols-2">
-          <img className="md:w-[450px] sm:w-[300px] mx-auto my-4 overflow-hidden" src={Accountimg} alt="/" />
+          
           <div className="flex flex-col justify-center">
             <div className="flex justify-center">
               <p className="mb-10 text-lg font-semibold">User Profile</p>
@@ -99,6 +99,7 @@ const Account = () => {
               </div>
             </div>
           </div>
+          <img className="md:w-[450px] sm:w-[300px] mx-auto my-4 overflow-hidden" src={Accountimg} alt="/" />
         </div>
       </div>
       <h1 className="text-2xl font-bold py-4">Account</h1>

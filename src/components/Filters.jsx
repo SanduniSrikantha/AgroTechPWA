@@ -8,7 +8,7 @@ const Filters = () => {
   return (
     <div class="bg-white py-8">
         <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-[#ffab70] mb-10">Our Products</h2>
+        <h2 class="text-3xl font-semi-bold text-amber-700 mb-10">Our Products</h2>
         <div class="grid grid-cols-1 xl:grid-cols-4 gap-5 md:grid-cols-2 place-items-center">
             <div class="">    
                 <Filter1 />   
@@ -20,7 +20,7 @@ const Filters = () => {
                 <Filter3 />
             </div>
             <div class="">
-            <button class="bg-yellow-500 hover:bg-[#e9cf81] text-white font-bold py-3 px-12 rounded-2xl">
+            <button class="bg-amber-700 hover:bg-amber-600 text-white font-bold py-3 px-12 rounded-2xl">
                 Filter
             </button>
 

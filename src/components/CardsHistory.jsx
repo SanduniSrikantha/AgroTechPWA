@@ -9,7 +9,7 @@ const CardsHistory = () => {
     <div class="bg-white py-10">
     <div class="container mx-auto px-3"> {/**px-3 */}
         <h2></h2>
-        <div class="grid md:grid-cols-1 lg:grid-cols-1 sm:grid-cols-1 gap-8">
+        <div class="grid md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 gap-8">
             <div class="max-w-2xl mx-auto bg-white shadow-md rounded-lg  dark:bg-gray-800 dark:border-gray-700">
                <CardHistory1/>
             </div>

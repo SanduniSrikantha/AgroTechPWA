@@ -8,7 +8,7 @@ const Hero = () => {
       <div className='max-w-[1200px] mx-auto grid md:grid-cols-2'>
         <img className='w-[500px] mx-auto my-4' src={HeroImage} alt='/' />
         <div className='flex flex-col justify-center'>
-          <p className='text-[#00df9a] font-bold text-xl mb-1 '>Welcome Growers.</p>
+          <p className='text-green-600 font-bold text-xl mb-1 '>Welcome Growers.</p>
           <div class='flex justify-start items-center'>
           <h1 className='md:text-4xl sm:text-3xl text-xl font-bold py-0'>GET YOUR</h1>
           <Typed 
@@ -19,8 +19,8 @@ const Hero = () => {
                     loop
           />         
           </div>
-          <p>
-            We're your one-stop destination for all your farming needs. Whether you're tending to acres of crops or nurturing a backyard garden, we've got you covered. Discover a wide selection of premium seeds, top-quality fertilizers, and trusted pesticides, all in one convenient place. 
+          <p class="">
+           Whether you're tending to acres of crops or nurturing a backyard garden, we've got you covered. 
           </p>
            { /*<button className='bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Get Started</button> */}
         </div>

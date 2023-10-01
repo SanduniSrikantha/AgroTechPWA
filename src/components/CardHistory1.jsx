@@ -12,7 +12,7 @@ const CardHistory1 = () => {
       <div>Date Placed: 12/06/2023</div>
       <div>Total Price: LKR 3000</div>
     </div>
-      
+    
     <div class='max-w-[1200px] mx-auto grid md:grid-cols-2'>
       <img class='md:w-[450px] sm:w-[200px] mx-auto  my-4 overflow-hidden' src={HeroImage} alt='/' />
     <div class="grid md:grid-rows-4 pt-5 pb-5 space-y-2 mx-8">

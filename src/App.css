@@ -41,4 +41,9 @@
   color: #888;
 }
 
-/*Ok*/
+.small-google-pay-button {
+  /* Adjust the width and height to make the button smaller */
+  width: 100px; /* Set your desired width */
+  height: 40px; /* Set your desired height */
+  /* You can also adjust other styles like font-size, padding, etc. */
+}

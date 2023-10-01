@@ -16,7 +16,7 @@ const RadioButtons = () => {
           className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
           htmlFor="inlineRadio1"
         >
-          1 Kg
+          Small
         </label>
       </div>
 
@@ -33,7 +33,7 @@ const RadioButtons = () => {
           className="mt-px inline-block pl-[0.15rem] hover:cursor-pointer"
           htmlFor="inlineRadio2"
         >
-          5 Kg
+          Medium
         </label>
       </div>
 
@@ -51,7 +51,7 @@ const RadioButtons = () => {
           className="mt-px inline-block pl-[0.15rem] hover:pointer-events-none"
           htmlFor="inlineRadio3"
         >
-          4x5 Kg
+          Bulk
         </label>
       </div>
     </div>
