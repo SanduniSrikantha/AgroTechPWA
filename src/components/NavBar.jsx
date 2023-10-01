@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
+
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -12,11 +14,11 @@ const NavBar = () => {
     <div className='max-w-[1200px] flex justify-between items-center h-24 w-screen mx-auto px-4 text-black bg-white'>
       <h1 className='w-full text-3xl font-bold text-green-600'>GROWERS</h1>
       <ul className='hidden md:flex'>
-        <li className='p-4 uppercase font-semibold'>Products</li>
-        <li className='p-4 uppercase font-semibold'>Upcoming</li>
-        <li className='p-4 uppercase font-semibold'>History</li>
-        <li className='p-4 uppercase font-semibold'>Cart</li>
-        <li className='p-4 uppercase font-semibold'>Profile</li>
+        <li className='p-4 uppercase font-semibold'><NavLink to="/home">Products</NavLink></li>
+        <li className='p-4 uppercase font-semibold'><NavLink to="/upcoming">Upcoming</NavLink></li>
+        <li className='p-4 uppercase font-semibold'><NavLink to="/history">History</NavLink></li>
+        <li className='p-4 uppercase font-semibold'><NavLink to="/cart">Cart</NavLink></li>
+        <li className='p-4 uppercase font-semibold'><NavLink to="/account">Profile</NavLink></li>
       </ul>
       <div onClick={handleNav} className='block md:hidden'>
           {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
