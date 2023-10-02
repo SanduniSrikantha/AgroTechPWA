@@ -7,6 +7,87 @@ background {
     overflow:hidden;
 }
 
+/*.active{
+    background: rgb(67, 160, 71);
+    color:white;
+    border-radius: 5rem;
+    display: inline-block;
+    padding: 2px;
+}*/
+
+
+.active{
+    text-decoration-line: underline;
+    text-decoration-color: rgb(5, 122, 85);
+    text-decoration-thickness: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-top: 2px !important;
+    margin-top: 1px;
+    
+
+}
+
+.wrapper{
+    position: relative;
+}
+    
+.wrapper span{
+    position: absolute;
+    top: -2px;
+    right: -2px; 
+}
+
+/*.css-cwhad8-MuiDateCalendar-root{
+    background-color: rgb(129, 199, 132) !important;
+    border-radius: 25px;
+    width:500px !important;
+    height: 400px !important;
+    padding-top: 30px;
+    padding-bottom: 20px !important;
+    margin-top: 20px !important;
+
+}*/
+
+.css-cwhad8-MuiDateCalendar-root{
+    background-color: white !important;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(5, 122, 85);
+
+}
+
+
+@media screen and (min-width: 480px) {
+    .css-cwhad8-MuiDateCalendar-root{
+        background-color: white !important;
+        border-radius: 25px;
+        width:500px !important;
+        height: 400px !important;
+        padding-top: 25px;
+        padding-bottom: 25px !important;
+        margin-top: 15px !important;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(5, 122, 85);
+      
+    }
+  }
+
+/*.css-1c32n2y-MuiBadge-root{
+    width:80px !important;
+}
+  border-style: solid;
+  border-width: 5px;
+.css-i5q14k-MuiDayCalendar-header{
+    padding:10px !important;
+}
+
+.css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel{
+    width:400px !important;
+}*/
+/* CSS to hide the default file input button */
 
 
 

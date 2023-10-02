@@ -71,8 +71,8 @@ function Row(props) {
               <Table size="small" aria-label="purchases">
                 <TableHead>
                   <TableRow>
-                    <TableCell>Date</TableCell>
-                    <TableCell>Customer</TableCell>
+                    <TableCell>Ordered & Arrived</TableCell>
+                    <TableCell>Seller</TableCell>
                     <TableCell align="right">Amount</TableCell>
                     <TableCell align="right">Total price ($)</TableCell>
                   </TableRow>
@@ -104,7 +104,7 @@ Row.propTypes = {
   row: PropTypes.shape({
     calories: PropTypes.number.isRequired,
     carbs: PropTypes.number.isRequired,
-    fat: PropTypes.number.isRequired,
+    fat: PropTypes.string.isRequired,
     history: PropTypes.arrayOf(
       PropTypes.shape({
         amount: PropTypes.number.isRequired,
@@ -119,11 +119,11 @@ Row.propTypes = {
 };
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 3.99),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.99),
-  createData('Eclair', 262, 16.0, 24, 6.0, 3.79),
-  createData('Cupcake', 305, 3.7, 67, 4.3, 2.5),
-  createData('Gingerbread', 356, 16.0, 49, 3.9, 1.5),
+  createData('Premium Tomato Seeds', 159, 6.0, 'Seeds', 4.0, 3.99),
+  createData('Potassium Sulphate', 237, 9.0, 'Fertilizer', 4.3, 4.99),
+  createData('xxx Pesticide', 262, 16.0, 'Pesticide', 6.0, 3.79),
+  createData('Pumpkin Seeds', 305, 3.7, 'Seeds', 4.3, 2.5),
+  createData('Compost xxx', 356, 16.0, 'Fertilizer', 3.9, 1.5),
 ];
 
 const UpcomingList = () => {
@@ -133,11 +133,11 @@ const UpcomingList = () => {
         <TableHead>
           <TableRow>
             <TableCell />
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell>Item/s</TableCell>
+            <TableCell align="right">Order ID</TableCell>
+            <TableCell align="right">Category</TableCell>
+            <TableCell align="right">Category</TableCell>
+            <TableCell align="right">View Invoice</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

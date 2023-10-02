@@ -9,15 +9,15 @@ const CardsUpcoming2 = () => {
   return (
     <div class="max-w-[1200px] mx-auto ">
     <div class='max-w-[1200px] mx-5 my-5 flex justify-start space-x-4'>
-      <div>ORDER NO: 1123</div>
-      <div>Date Placed: 12/06/2023</div>
-      <div>Total Price: LKR 3000</div>
+      <div class="lg:text-lg sm:text-sm font-semibold">ORDER NO: 1123</div>
+      <div class="lg:text-lg sm:text-sm font-semibold">Date Placed: 12/06/2023</div>
+      <div class="lg:text-lg sm:text-sm font-semibold">Total Price: LKR 3000</div>
     </div>
       
     <div class='max-w-[1200px] mx-auto grid md:grid-cols-2'>
       <img class='md:w-[450px] sm:w-[200px] mx-auto  my-4 overflow-hidden' src={Tomato} alt='/' />
     <div class="grid md:grid-rows-4 pt-5 pb-5 space-y-2 mx-8">
-      <div class="md:pt-14">Micro Pesticide</div>
+      <div class="md:pt-14 font-semibold sm:text-sm md:text-lg">Micro Pesticide</div>
       <div class="">It totally kills like all the pests. tests proven. uhhhhhhhhhhhhhhhhhh just trust me and buy it man.</div>
       <div class=" md:pt-3 flex justify-start space-x-4">
       <CheckCircleTwoToneIcon />

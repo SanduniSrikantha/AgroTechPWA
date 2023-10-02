@@ -4,6 +4,10 @@ import { UserAuth } from '../context/AuthContext'
 import LoginImage from '../assets/LoginImage.png'
 
 
+// JSX code for the page
+
+
+
 const Signin = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -28,11 +32,12 @@ const Signin = () => {
 
     <div>
       <head><meta name="theme-color" content="#171717" /></head>
+      <link rel="manifest" href="/manifest.webmanifest"/><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script>
     
     <div class="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
       
-      <div class="lg:mb-12 md:mb-0 sm:mb-0 md:w-8/12 lg:w-6/12 mt-10">
-        <img src={LoginImage} alt="" />
+      <div class="lg:mb-12 md:mb-0 sm:mb-0 md:w-8/12 lg:w-6/12 lg:mt-10 sm:mt-1">
+        <img src={LoginImage} alt="" class="lg:w-[600px] lg:ml-20 sm:ml:0 sm:mt-1 mt-10" />
 
       </div>
       <div class='lg:w-[500px] md:mx-auto lg:mt-16 md:mt-0 md:mb:16 sm:mt-0 p-4'>

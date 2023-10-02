@@ -31,7 +31,7 @@ const Signup = () => {
 
     <div class="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
       <div class="lg:mb-12 md:mb-0 sm:mb-0 md:w-8/12 lg:w-6/12 mt-10">
-        <img src={SignupImage} alt="" />
+        <img src={SignupImage} alt="" class="lg:w-[600px] lg:ml-20 sm:ml:0  mt-10 sm:mt-1" />
       </div>
       
       <div class='lg:w-[500px] md:mx-auto lg:mt-16 md:mt-0 md:mb:16 sm:mt-0 p-4'>

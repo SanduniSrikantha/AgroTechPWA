@@ -6,6 +6,7 @@ import { Avatar } from '@mui/material';
 import Accountimg from '../assets/Account.png';
 import { storage } from '../firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Account = () => {
   const { user, logout } = UserAuth();
@@ -71,9 +72,9 @@ const Account = () => {
             <div className="h-auto lg:w-[550px] md:w-[550px] sm:w-[500px] mx-auto bg-white shadow-md rounded-lg dark:bg-gray-800 dark:border-gray-700">
               <div className="flex justify-center">
                 <Avatar
-                  alt="Remy Sharp"
+                  alt="User3"
                   src={url}
-                  sx={{ width: 100, height: 100 }}
+                  sx={{ width: 105, height: 105 }}
                 />
               </div>
               <div className="flex justify-center">
@@ -81,20 +82,23 @@ const Account = () => {
               </div>
               <div className="px-4">
                 <div className="grid grid-cols-2 py-4">
-                  <input type="file" onChange={handleImageChange} />
-                  <button onClick={handleSubmit}>Submit</button>
+                  <input type="file" class="text-sm" onChange={handleImageChange} />
+                  <button onClick={handleSubmit} class="place-self-end mr-10"><ArrowForwardIosIcon/></button>
                 </div>
                 <div className="grid grid-cols-2 py-4">
                   <p>Edit stuff on acc</p>
-                  <p className="place-self-end">arrow</p>
+                  <p className="place-self-end mr-10"><ArrowForwardIosIcon/></p>
                 </div>
                 <div className="grid grid-cols-2 py-4">
                   <p>Edit stuff on acc</p>
-                  <p className="place-self-end">arrow</p>
+                  <p className="place-self-end mr-10"><ArrowForwardIosIcon/></p>
                 </div>
                 <div className="grid grid-cols-2 py-4">
-                  <p>Edit stuff on acc</p>
-                  <p className="place-self-end">arrow</p>
+                  <p class="pt-4">Logout</p>
+                  <button onClick={handleLogout} className=" self-end border py-2 md:mr-15 md:ml-20 sm:ml-20 sm:mr-5 my-1 rounded bg-gray-700 text-white">
+                   Logout
+                  </button>
+                  
                 </div>
               </div>
             </div>
@@ -102,10 +106,8 @@ const Account = () => {
           <img className="md:w-[450px] sm:w-[300px] mx-auto my-4 overflow-hidden" src={Accountimg} alt="/" />
         </div>
       </div>
-      <h1 className="text-2xl font-bold py-4">Account</h1>
-      <button onClick={handleLogout} className="border px-6 py-2 my-4">
-        Logout
-      </button>
+
+
     </div>
   );
 };

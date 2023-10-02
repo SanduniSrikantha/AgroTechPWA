@@ -17,7 +17,7 @@ const ProductCard = () => {
 
           </div>
 
-      </div><ProductInformation /></>
+      </div></>
       
     
   )

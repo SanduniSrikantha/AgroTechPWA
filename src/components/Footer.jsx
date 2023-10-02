@@ -9,9 +9,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className='max-w-[1400px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 bg-yellow-300 text-black'>
+    <div className='max-w-[1400px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 bg-amber-600 text-black'>
       <div>
-        <h1 className='w-full text-3xl font-bold text-black'>FOOTER.</h1>
+        <h1 className='w-full text-xl font-bold text-black'>FOOTER.</h1>
         <p className='py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.</p>
         <div className='flex justify-between md:w-[75%] my-6'>
             <FaFacebookSquare size={30} />
