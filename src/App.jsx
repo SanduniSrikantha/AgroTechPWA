@@ -1,30 +1,46 @@
 import React from 'react'
-import Signin from './components/Signin'
-import Signup from './components/Signup'
-import Account from './components/Account'
+import Signin from './views/Signin'
+import Signup from './views/Signup'
+import Cart from './views/Cart'
+import CheckOut from './views/CheckOut'
+import Upcoming from './views/Upcoming'
+import ProductView from './views/ProductView'
+import Home from './views/home'
+import Account from './views/Account'
 import { Route, Routes } from 'react-router-dom'
 import { AuthContextProvider } from './context/AuthContext'
-import ProtectedRoute from './components/ProtectedRoutes'
+import ProtectedRoute from './views/ProtectedRoutes'
+import History from './views/History'
+
+
+
+
 
 function App() {
   
 
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold">
-        Firebase Auth
-      </h1>
+ 
       <AuthContextProvider>
       <Routes>
         <Route path='/' element={<Signin />} />
         <Route path='/signup' element={<Signup />} />
         <Route 
-        path='/account' 
+        path='/home' 
         element={
         <ProtectedRoute>
-          <Account />
+          <Home />
           </ProtectedRoute>} 
           />
+        <Route path='/cart' element={(<Cart />)} />
+        <Route path='/checkout' element={(<CheckOut />)} />
+        <Route path='/productview' element={(<ProductView />)} />
+        <Route path='/account' element={(<Account />)} />
+        <Route path='/history' element={(<History/>)} />
+        <Route path='/upcoming' element={(<Upcoming />)} />
+        
+          
       </Routes>
       </AuthContextProvider>
     </div>
