@@ -103,7 +103,7 @@ const Account = () => {
               </div>
             </div>
           </div>
-          <img className="md:w-[450px] sm:w-[300px] mx-auto my-4 overflow-hidden" src={Accountimg} alt="/" />
+          <img className="md:w-[250px] sm:w-[300px] mx-auto my-4 overflow-hidden" src={Accountimg} alt="/" />
         </div>
       </div>
 
