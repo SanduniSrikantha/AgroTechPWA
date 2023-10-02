@@ -25,7 +25,12 @@ const Signin = () => {
 
 
   return (
+
+    <div>
+      <head><meta name="theme-color" content="#171717" /></head>
+    
     <div class="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
+      
       <div class="lg:mb-12 md:mb-0 sm:mb-0 md:w-8/12 lg:w-6/12 mt-10">
         <img src={LoginImage} alt="" />
 
@@ -47,6 +52,7 @@ const Signin = () => {
           <button class='border-purple-500 bg-purple-500 hover:bg-purple-400 w-full p-4 mt-5 text-white rounded'>Sign In</button>
         </form>
       </div>
+    </div>
     </div>
     
 
