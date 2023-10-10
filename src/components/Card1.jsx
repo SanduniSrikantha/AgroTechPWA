@@ -14,7 +14,7 @@ const Card1 = () => {
 
 	
 		<><a href="#">
-          <img class="rounded-t-lg p-8" src={Tomato} alt="product image" />
+          <img class="rounded-t-lg p-8" src={Tomato} alt="Product image" />
       </a><div class="px-5 pb-5">
               <a href="#">
                   <h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white">Farmers' Choice Tomato Seeds, Superior Yield and Flavor</h3>
