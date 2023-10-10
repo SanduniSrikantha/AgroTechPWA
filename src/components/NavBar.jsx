@@ -28,10 +28,14 @@ const NavBar = () => {
       </div>
       <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 z-10' : 'ease-in-out duration-500 fixed left-[-100%]'}>
         <h1 className='w-full text-3xl font-bold text-green-600 m-4'>GROWERS.</h1>
-          <li className='p-4 border-b border-gray-600 uppercase'><NavLink to="/home">Products</NavLink></li>
-          <li className='p-4 border-b border-gray-600 uppercase'><NavLink to="/upcoming">Upcoming</NavLink></li>
-          <li className='p-4 border-b border-gray-600 uppercase'><NavLink to="/history">History</NavLink></li>
-          <li className='p-4 border-b border-gray-600 uppercase'><NavLink to="/cart">Cart</NavLink></li>
+          <li className='p-4 border-b border-white uppercase'><NavLink to="/home">Products</NavLink></li>
+          <div class="wrapper">
+          <span class="bg-green-600 rounded-full text-white py-1 px-3 mr-20">3</span>
+          <li className='p-4 border-b border-white uppercase'><NavLink to="/upcoming">Upcoming</NavLink></li>
+          
+          </div>
+          <li className='p-4 border-b border-white uppercase'><NavLink to="/history">History</NavLink></li>
+          <li className='p-4 border-b border-white uppercase'><NavLink to="/cart">Cart</NavLink></li>
           <li className='p-4 uppercase'><NavLink to="/account">Profile</NavLink></li>
       </ul>
     </div>

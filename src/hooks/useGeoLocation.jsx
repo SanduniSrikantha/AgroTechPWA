@@ -13,8 +13,8 @@ const useGeoLocation = () => {
         setLocation({
             loaded: true,
             coordinates:{
-                lat: location.coords.latitude,
-                lng: location.coords.longitude,
+                lat: location.coords.latitude.toFixed(4),
+                lng: location.coords.longitude.toFixed(4),
             },
         });
     };

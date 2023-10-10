@@ -2,6 +2,9 @@ import React from 'react'
 import {useEffect} from 'react'
 import { messaging } from '../firebase'
 import {getToken} from 'firebase/messaging'
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
+import Cart1 from '../components/Cart1'
 
 
 const Cart = () => {
@@ -24,7 +27,9 @@ const Cart = () => {
   }, [])
   return (
     <div>
-      <h1>cart HIIIIIIIIIIIIIIII</h1>
+      <NavBar/>
+      <Cart1/>
+      <Footer/>
       
     </div>
   )
