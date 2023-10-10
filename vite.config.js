@@ -8,28 +8,28 @@ const manifestForPlugIn = {
   includeAssests:['favicon.ico', "apple-touc-icon.png", "masked-icon.svg"],
   manifest:{
     name:"GrowersCart",
-    short_name:"CrowersCart",
+    short_name:"GrowersCart",
     description:"An app made for growers out there, to easily access any resources required.",
     icons:[{
-      src: '/logo-192,192.png',
+      src: '/logo-192,192.jpg',
       sizes:'192x192',
       type:'image/png',
       purpose:'favicon'
     },
     {
-      src:'/logo-512,512.png',
+      src:'/logo-512,512.jpg',
       sizes:'512x512',
       type:'image/png',
       purpose:'favicon'
     },
     {
-      src: '/logo-180,180.png',
+      src: '/logo-180,180.jpg',
       sizes:'180x180',
       type:'image/png',
       purpose:'apple touch icon',
     },
     {
-      src: '/logo-512,512.png',
+      src: '/logo-512,512.jpg',
       sizes:'512x512',
       type:'image/png',
       purpose:'any maskable',
