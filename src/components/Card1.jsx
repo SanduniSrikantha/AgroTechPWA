@@ -1,12 +1,15 @@
 import React from 'react'
-import HeroImage from '../assets/HeroImage.png'
 import Tomato from '../assets/Tomato.webp'
+import { useNavigate } from 'react-router-dom';
 
 const Card1 = () => {
+    const navigate = useNavigate(); // Initialize useNavigate
+
+    // Function to handle the "View" button click and navigate to the productview page
+    const handleViewButtonClick = () => {
+      navigate('/productview'); // Use navigate to navigate to the "/productview" route
+    };
   return (
-
-   
-
 
 
 	
@@ -51,9 +54,12 @@ const Card1 = () => {
               </div>
               <div class="flex items-center justify-between">
                   <span class="text-2xl font-bold text-gray-900 dark:text-white">Lkr.750</span>
-                  <a href="#"
-                      class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View
-                  </a>
+                  <button
+            onClick={handleViewButtonClick}
+            className="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            View
+          </button>
               </div>
           </div></>
 
