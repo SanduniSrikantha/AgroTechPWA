@@ -1,6 +1,6 @@
 import React from 'react'
-import CheckCircleTwoToneIcon from '@mui/icons-material/CheckCircleTwoTone';
 import PS from '../assets/PotatoSeeds.jpg'
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
 
 
@@ -19,7 +19,7 @@ const CardsUpcoming1 = () => {
       <div class="md:pt-14 font-semibold sm:text-sm md:text-lg">Premium Potato Seeds</div>
       <div class="">It totally kills like all the pests. tests proven. uhhhhhhhhhhhhhhhhhh just trust me and buy it man.</div>
       <div class=" md:pt-3 flex justify-start space-x-4"> 
-      <CheckCircleTwoToneIcon />
+      <LocalShippingIcon />
 
       <div>To Arrive in 2 Days</div>
 

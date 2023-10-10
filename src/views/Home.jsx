@@ -4,11 +4,12 @@ import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Cards from '../components/Cards'
 import Filters from '../components/Filters'
-import useGeoLocation from '../hooks/useGeolocation'
+import Location from '../components/Location'
+import LocationCards from '../components/LocationCards'
 
 
 const home = () => {
-  const location = useGeoLocation();
+  
   return (
     <div>
       <div>
@@ -16,12 +17,8 @@ const home = () => {
         <Hero />
         <Filters />
         <Cards />
-        <div>
-          {
-            location.loaded ? JSON.stringify(location):"Location data not available"
-          }
-
-        </div>
+        <Location/>
+        <LocationCards/>
         <Footer />        
       </div>
     </div>

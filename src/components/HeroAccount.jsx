@@ -4,6 +4,7 @@ import avatar from '../assets/avatar.png';
 
 
 const HeroAccount = () => {
+  
   return (
     <div class="w-full bg-white py-12 px-4">
         <div class="max-w-[1200px] mx-auto grid md:grid-cols-2">

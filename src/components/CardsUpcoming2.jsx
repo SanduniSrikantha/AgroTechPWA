@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroImage from '../assets/HeroImage.png';
-import CheckCircleTwoToneIcon from '@mui/icons-material/CheckCircleTwoTone';
 import Tomato from '../assets/Tomato.webp'
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
 
 
@@ -20,7 +20,7 @@ const CardsUpcoming2 = () => {
       <div class="md:pt-14 font-semibold sm:text-sm md:text-lg">Micro Pesticide</div>
       <div class="">It totally kills like all the pests. tests proven. uhhhhhhhhhhhhhhhhhh just trust me and buy it man.</div>
       <div class=" md:pt-3 flex justify-start space-x-4">
-      <CheckCircleTwoToneIcon />
+      <LocalShippingIcon />
 
       <div>To Arrive in a Week</div>
 
