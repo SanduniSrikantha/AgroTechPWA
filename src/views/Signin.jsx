@@ -37,13 +37,13 @@ const Signin = () => {
     <div class="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
       
       <div class="lg:mb-12 md:mb-0 sm:mb-0 md:w-8/12 lg:w-6/12 lg:mt-10 sm:mt-1">
-        <img src={LoginImage} alt="" class="lg:w-[600px] lg:ml-20 sm:ml:0 sm:mt-1 mt-10" />
+        <img src={LoginImage} alt="" class="md:w-[600px] lg:ml-20 sm:ml:0 sm:mt-1 mt-10" />
 
       </div>
-      <div class='lg:w-[500px] md:mx-auto lg:mt-16 md:mt-0 md:mb:16 sm:mt-0 p-4'>
+      <div class='lg:w-[500px] md:mx-auto lg:mt-16 md:mt-0 md:mb-16 sm:mt-0 md:p-4 p-8'>
         <div>
           <h1 class='text-2xl font-bold py-2'>Sign In to your account!</h1>
-          <p class='py-2'>New here? Click here <Link to='/signup' class='underline'>Sign Up.</Link></p>
+          <p class='py-2'>New here? Click here <Link to='/signup' class='underline text-purple-700'>Sign Up.</Link></p>
         </div>
         <form onSubmit={handleSubmit} >
           <div class='flex flex-col py-2'>

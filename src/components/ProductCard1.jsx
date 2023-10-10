@@ -1,16 +1,15 @@
 import React from 'react'
-import LocalOfferTwoToneIcon from '@mui/icons-material/LocalOfferTwoTone';
+import SellIcon from '@mui/icons-material/Sell';
 import Tomato from '../assets/Tomato.webp';
 import CounterInput from './CounterInput';
 import RadioButtons from './RadioButtons';
 import Payment from './Payment'
-import useGeoLocation from '../hooks/useGeolocation';
 import OrderDate from './OrderDate';
 
 
 
 const ProductCard1 = () => {
-    const location = useGeoLocation();
+    
   return (
     <div class="max-w-[1200px] mx-auto ">
 
@@ -21,7 +20,7 @@ const ProductCard1 = () => {
       <div class="mt-4 font-semibold text-xl">Ferry-Morse Tomato Seeds</div>
       <div class="">Farmers' Preferred Tomato Seeds: Our carefully selected tomato varieties are bred for high yields and exceptional flavor. Perfect for all farming conditions, these seeds ensure robust plants and plentiful harvests. Trust in our quality seeds to elevate your tomato crop, delivering both quantity and taste to your farm.</div>
       <div class=" md:pt-3 flex justify-start space-x-4">
-      <LocalOfferTwoToneIcon />
+      <SellIcon />
 
       <div class="font-semibold text-lg">LKR 1250</div>
 
@@ -57,13 +56,10 @@ const ProductCard1 = () => {
       
 
       </div>
-      <div class="mx-4">
+      <div class="mx-4 self-center">
        <Payment/>
       </div>
       <div>
-      {/*{
-        location.loaded ? JSON.stringify(location) : "Location data not available yet."
-      }*/}
       </div>    
     </div>
 

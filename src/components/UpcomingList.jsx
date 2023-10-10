@@ -71,10 +71,10 @@ function Row(props) {
               <Table size="small" aria-label="purchases">
                 <TableHead>
                   <TableRow>
-                    <TableCell>Ordered & Arrived</TableCell>
+                    <TableCell>Order & Arrival Dates</TableCell>
                     <TableCell>Seller</TableCell>
                     <TableCell align="right">Amount</TableCell>
-                    <TableCell align="right">Total price ($)</TableCell>
+                    <TableCell align="right">Total price (Lkr)</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -113,17 +113,17 @@ Row.propTypes = {
       }),
     ).isRequired,
     name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    protein: PropTypes.number.isRequired,
+    price: PropTypes.string.isRequired,
+    protein: PropTypes.string.isRequired,
   }).isRequired,
 };
 
 const rows = [
-  createData('Premium Tomato Seeds', 159, 6.0, 'Seeds', 4.0, 3.99),
-  createData('Potassium Sulphate', 237, 9.0, 'Fertilizer', 4.3, 4.99),
-  createData('xxx Pesticide', 262, 16.0, 'Pesticide', 6.0, 3.79),
-  createData('Pumpkin Seeds', 305, 3.7, 'Seeds', 4.3, 2.5),
-  createData('Compost xxx', 356, 16.0, 'Fertilizer', 3.9, 1.5),
+  createData('Premium Tomato Seeds', 159, 'Delivered', 'Seeds', 'View', 600),
+  createData('Potassium Sulphate', 237, 'Not Delivered', 'Fertilizer', 'View', 4.99),
+  createData('xxx Pesticide', 262, 'Delivered', 'Pesticide', 'View', 3.79),
+  createData('Pumpkin Seeds', 305, 'Not Delivered', 'Seeds', 'View', 2.5),
+  createData('Compost xxx', 356, 'Delivered', 'Fertilizer', 'View', 1.5),
 ];
 
 const UpcomingList = () => {
@@ -135,7 +135,7 @@ const UpcomingList = () => {
             <TableCell />
             <TableCell>Item/s</TableCell>
             <TableCell align="right">Order ID</TableCell>
-            <TableCell align="right">Category</TableCell>
+            <TableCell align="right">Delivery Status</TableCell>
             <TableCell align="right">Category</TableCell>
             <TableCell align="right">View Invoice</TableCell>
           </TableRow>
