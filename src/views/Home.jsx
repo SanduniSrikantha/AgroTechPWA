@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import Cards from '../components/Cards'
 import Filters from '../components/Filters'
 import Location from '../components/Location'
-import LocationCards from '../components/LocationCards'
+import Seller from '../components/Seller'
 
 
 const home = () => {
@@ -18,7 +18,7 @@ const home = () => {
         <Filters />
         <Cards />
         <Location/>
-        <LocationCards/>
+        <Seller/>
         <Footer />        
       </div>
     </div>

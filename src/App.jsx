@@ -5,12 +5,13 @@ import Cart from './views/Cart'
 import CheckOut from './views/CheckOut'
 import Upcoming from './views/Upcoming'
 import ProductView from './views/ProductView'
-import Home from './views/home'
+import Home from './views/Home'
 import Account from './views/Account'
 import { Route, Routes } from 'react-router-dom'
 import { AuthContextProvider } from './context/AuthContext'
 import ProtectedRoute from './views/ProtectedRoutes'
 import History from './views/History'
+import SellerView from './views/SellerView'
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route path='/account' element={(<Account />)} />
         <Route path='/history' element={(<History/>)} />
         <Route path='/upcoming' element={(<Upcoming />)} />
+        <Route path='/sellerview' element={(<SellerView />)} />
         
           
       </Routes>
