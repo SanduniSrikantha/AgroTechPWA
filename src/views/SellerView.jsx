@@ -2,8 +2,8 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import SellerAccount from '../components/SellerAccount'
-import Cards from '../components/Cards'
 import SellerFilter from '../components/SellerFilter'
+import MyProductCards from '../components/MyProductCards'
 
 const SellerView = () => {
   return (
@@ -13,7 +13,7 @@ const SellerView = () => {
         <SellerAccount/>
         <SellerFilter/>
         
-        <Cards/>
+        <MyProductCards/>
         <Footer/>
       
     </div>

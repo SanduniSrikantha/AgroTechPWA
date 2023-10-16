@@ -17,11 +17,11 @@ const CardsUpcoming1 = () => {
       <img class='md:w-[450px] sm:w-[200px] mx-auto  my-4 overflow-hidden' src={PS} alt='/' />
     <div class="grid md:grid-rows-4 pt-5 pb-5 space-y-2 mx-8">
       <div class="md:pt-14 font-semibold sm:text-sm md:text-lg">Premium Potato Seeds</div>
-      <div class="">It totally kills like all the pests. tests proven. uhhhhhhhhhhhhhhhhhh just trust me and buy it man.</div>
+      <div class="">Potato seeds: Brown, round, yield hearty spuds when planted.</div>
       <div class=" md:pt-3 flex justify-start space-x-4"> 
       <LocalShippingIcon />
 
-      <div>To Arrive in 2 Days</div>
+      <div class="font-semibold">To Arrive in 2 Days</div>
 
       </div>
       

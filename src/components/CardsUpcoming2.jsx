@@ -17,12 +17,12 @@ const CardsUpcoming2 = () => {
     <div class='max-w-[1200px] mx-auto grid md:grid-cols-2'>
       <img class='md:w-[450px] sm:w-[200px] mx-auto  my-4 overflow-hidden' src={Tomato} alt='/' />
     <div class="grid md:grid-rows-4 pt-5 pb-5 space-y-2 mx-8">
-      <div class="md:pt-14 font-semibold sm:text-sm md:text-lg">Micro Pesticide</div>
-      <div class="">It totally kills like all the pests. tests proven. uhhhhhhhhhhhhhhhhhh just trust me and buy it man.</div>
+      <div class="md:pt-14 font-semibold sm:text-sm md:text-lg">Tomato Seeds</div>
+      <div class="">Tomato seeds: Tiny, oval, and promise vibrant red bounty.</div>
       <div class=" md:pt-3 flex justify-start space-x-4">
       <LocalShippingIcon />
 
-      <div>To Arrive in a Week</div>
+      <div class="font-semibold">To Arrive in a Week</div>
 
       </div>
       

@@ -22,7 +22,7 @@ const ProductCard1 = () => {
       <div class=" md:pt-3 flex justify-start space-x-4">
       <SellIcon />
 
-      <div class="font-semibold text-lg">LKR 1250</div>
+      <div class="font-semibold text-lg">LKR. 750</div>
 
       </div>
 

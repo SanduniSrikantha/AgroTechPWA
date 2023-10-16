@@ -1,9 +1,8 @@
 import React from 'react'
-import Tomato from '../assets/Tomato.webp'
 import { useNavigate } from 'react-router-dom';
 import { Avatar } from '@mui/material';
 
-const Seller1 = () => {
+const Seller4 = () => {
     const navigate = useNavigate(); // Initialize useNavigate
 
     // Function to handle the "View" button click and navigate to the productview page
@@ -18,7 +17,7 @@ const Seller1 = () => {
             <div class="flex items-center justify-start py-2 px-1">
                 <Avatar style={{ width: '60px', height: '60px' }}/>
                 <a href="#">
-                  <h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white mr-5 ml-4">Emma Bloomgard</h3>
+                  <h3 class="text-gray-900 font-semibold text-xl tracking-tight dark:text-white mr-5 ml-4">Jack GreenThumb</h3>
                 </a>
 
             </div>
@@ -28,7 +27,7 @@ const Seller1 = () => {
 
                   <span class="bg-purple-200 text-purple-800  text-xs font-semibold mr-2 lg:px-2.5 md:px-2.5 px-4 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">Fertilizer</span>
                   <span class="bg-red-200 text-red-800  text-xs font-semibold mr-2 lg:px-2.5 md:px-2.5 px-4 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">Pesticide</span>
-                  <span class="bg-amber-200 text-amber-800  text-xs font-semibold mr-2 lg:px-2.5 md:px-2.5 px-4 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">Seeds</span>
+                  <span class="bg-white text-white text-xs font-semibold mr-2 lg:px-2.5 md:px-2.5 px-4 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">Seeds</span>
               </div>
               <div class="flex items-center justify-between">
               <button
@@ -58,4 +57,4 @@ const Seller1 = () => {
   )
 }
 
-export default Seller1
+export default Seller4

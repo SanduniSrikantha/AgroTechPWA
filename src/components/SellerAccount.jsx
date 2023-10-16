@@ -28,6 +28,7 @@ const SellerAccount = () => {
                 <div class="flex place-items-start my-4">
                   <h2 class="mt-2 text-base font-semibold">Provides: </h2>
                 <span class="bg-purple-200 text-purple-800 text-sm font-semibold px-5 py-2 rounded dark:bg-blue-200 dark:text-blue-800 ml-3 mt-0.5">Fertilizer</span>
+                <span class="bg-red-200 text-red-800 text-sm font-semibold px-5 py-2 rounded dark:bg-blue-200 dark:text-blue-800 ml-3 mt-0.5">Pesticide</span>
                 </div>
                 <div className="flex place-items-start my-4">
                   <p class="text-base font-semibold">Overall Score: </p>

@@ -30,7 +30,7 @@ const NavBar = () => {
         <h1 className='w-full text-3xl font-bold text-green-600 m-4'>GROWERS.</h1>
           <li className='p-4 border-b border-white uppercase'><NavLink to="/home">Products</NavLink></li>
           <div class="wrapper">
-          <span class="bg-green-600 rounded-full text-white py-1 px-3 mr-20">3</span>
+          <span class="bg-green-600 rounded-full text-white py-1 px-3 mr-20 justify-center">3</span>
           <li className='p-4 border-b border-white uppercase'><NavLink to="/upcoming">Upcoming</NavLink></li>
           
           </div>

@@ -86,11 +86,11 @@ const Account = () => {
                   <button onClick={handleSubmit} class="place-self-end mr-10"><ArrowForwardIosIcon/></button>
                 </div>
                 <div className="grid grid-cols-2 py-4">
-                  <p>Edit stuff on acc</p>
+                  <p>Privacy Settings</p>
                   <p className="place-self-end mr-10"><ArrowForwardIosIcon/></p>
                 </div>
                 <div className="grid grid-cols-2 py-4">
-                  <p>Edit stuff on acc</p>
+                  <p>Edit Account</p>
                   <p className="place-self-end mr-10"><ArrowForwardIosIcon/></p>
                 </div>
                 <div className="grid grid-cols-2 py-4">

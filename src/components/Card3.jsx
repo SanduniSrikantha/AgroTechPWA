@@ -49,7 +49,7 @@ const Card3 = () => {
                   <span class="bg-amber-200 text-amber-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">Seeds</span>
               </div>
               <div class="flex items-center justify-between">
-                  <span class="text-2xl font-bold text-gray-900 dark:text-white">Lkr.1000</span>
+                  <span class="text-2xl font-bold text-gray-900 dark:text-white">LKR.1000</span>
                   <a href="#"
                       class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View
                   </a>
